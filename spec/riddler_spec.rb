@@ -7,7 +7,7 @@ describe('riddler#is_answer?')do
     expect(test_riddler.is_answer?).to(eq(false))
   end
   it("returns true if correc riddle answers") do
-    test_riddler = Riddler.new("human", "palindrome", "reflection")
+    test_riddler = Riddler.new("human", "reflection", "palindrome")
     expect(test_riddler.is_answer?).to(eq(true))
   end
 end

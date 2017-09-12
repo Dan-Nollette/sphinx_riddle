@@ -9,10 +9,10 @@ get('/') do
 end
 
 post('/output') do
-  @answer1 = params.fetch("answer1")
-  @answer2 = params.fetch("answer2")
-  @answer3 = params.fetch("answer3")
-  riddler = Riddler.new(@answer1, @answer2, @answer3)
+  answer1 = params.fetch("answer1")
+  answer2 = params.fetch("answer2")
+  answer3 = params.fetch("answer3")
+  riddler = Riddler.new(answer1, answer2, answer3)
   if riddler.is_answer?
     erb(:success_output)
   else

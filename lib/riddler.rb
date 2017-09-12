@@ -6,6 +6,6 @@ class Riddler
   end
 
   def is_answer?
-    @answer1 == "human" && @answer2 == "palindrome" && @answer3 == "reflection"
+    @answer1 == "human" && @answer2 == "reflection" && @answer3 == "palindrome"
   end
 end
